@@ -2,4 +2,10 @@ This script will get simple-rtsp-server up and running on your TAK Server machin
 
 1. SSH into your TAK server, we will assume you already have git installed to clone this repo
 
-`git clone `
+`git clone https://github.com/atakhq/simple-rtsp-tak-scripts.git`
+
+`cd simple-rtsp-tak-scripts`
+
+`sudo chmod +x *`
+
+`. `

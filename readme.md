@@ -1,6 +1,8 @@
-This script will get simple-rtsp-server up and running on your TAK Server machine in minutes and you will be ready to start streaming video.
+This script will get simple-rtsp-server up and running on your TAK Server in minutes and you will be ready to start streaming video.
 
-1. SSH into your TAK server, we will assume you already have git installed to clone this repo
+1. SSH into your TAK server, (we will assume you already have git installed to clone this repo)
+
+2. Clone this repo, make the script executable, run it.
 
 `git clone https://github.com/atakhq/simple-rtsp-tak-scripts.git`
 
@@ -8,4 +10,6 @@ This script will get simple-rtsp-server up and running on your TAK Server machin
 
 `sudo chmod +x *`
 
-`. `
+`. simpleRtspTakInstallScript.sh`
+
+3. Script should finish in under a minute.

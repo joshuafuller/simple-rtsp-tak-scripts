@@ -10,6 +10,10 @@ This script will get simple-rtsp-server up and running on your TAK Server in min
 
 `sudo chmod +x *`
 
-`. simpleRtspTakInstallScript.sh`
+`. simpleRtspTakInstallScript_UBUNTU.sh`
+
+or
+
+`. simpleRtspTakInstallScript_CENTOS07.sh`
 
 3. Script should finish in under a minute.

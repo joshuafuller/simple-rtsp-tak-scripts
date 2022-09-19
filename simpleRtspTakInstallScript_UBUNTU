@@ -259,13 +259,13 @@ EOF
 
 sudo systemctl enable rtsp-simple-server
 sudo systemctl start rtsp-simple-server
-sudo systemctl status rtsp-simple-server
 
 echo " "
 echo "********************************************************************"
-echo "Setup Script done, your Simple RTSP Server should now be running (check status above should see a green dot and Active)"
+echo "Setup Script done, your Simple RTSP Server should now be running"
 echo "********************************************************************"
-echo " "
+echo "Verfiy by running the following command:"
+echo "sudo systemctl status rtsp-simple-server"
 echo "********************************************************************"
 echo "You are ready to start streaming video."
 echo "********************************************************************"

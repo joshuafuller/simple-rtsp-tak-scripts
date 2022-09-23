@@ -18,4 +18,5 @@ or
 
 3. Script should finish in under a minute.
 
-## Check here for connecting from various platforms: https://atakhq.com/en/tak-server/simple-rtsp-server
+## Check here for connecting from various platforms: 
+## https://atakhq.com/en/tak-server/simple-rtsp-server

@@ -261,6 +261,7 @@ sudo systemctl enable rtsp-simple-server
 sudo systemctl start rtsp-simple-server
 
 
+DEVICE_NAME=$(ip -o -4 route show to default | awk '{print $5}')
 PUB_SERVER_IP=$(ip addr show $DEVICE_NAME | awk 'NR==3{print substr($2,1,(length($2)-3))}')
 
 

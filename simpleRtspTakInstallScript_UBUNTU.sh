@@ -260,6 +260,10 @@ EOF
 sudo systemctl enable rtsp-simple-server
 sudo systemctl start rtsp-simple-server
 
+
+PUB_SERVER_IP=$(ip addr show $DEVICE_NAME | awk 'NR==3{print substr($2,1,(length($2)-3))}')
+
+
 echo " "
 echo "********************************************************************"
 echo "Setup Script done, your Simple RTSP Server should now be running"
@@ -268,5 +272,6 @@ echo "Verfiy by running the following command:"
 echo "sudo systemctl status rtsp-simple-server"
 echo "********************************************************************"
 echo "You are ready to start streaming video."
+echo "SERVER IP/PORT: $PUB_SERVER_IP:554"
 echo "********************************************************************"
 echo " "

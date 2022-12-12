@@ -257,10 +257,20 @@ ExecStart=/usr/local/bin/rtsp-simple-server /usr/local/etc/rtsp-simple-server.ym
 WantedBy=multi-user.target
 EOF
 
+
+#Open RTSP/RTMP Ports in firewall
+sudo ufw allow 554/tcp
+sudo ufw allow 554/udp
+sudo ufw allow 1935/tcp
+sudo ufw allow 1935/udp
+sudo ufw reload 
+
+# Enable the service on server boot
 sudo systemctl enable rtsp-simple-server
 sudo systemctl start rtsp-simple-server
 
 
+#Show conx info at end
 DEVICE_NAME=$(ip -o -4 route show to default | awk '{print $5}')
 PUB_SERVER_IP=$(ip addr show $DEVICE_NAME | awk 'NR==3{print substr($2,1,(length($2)-3))}')
 
